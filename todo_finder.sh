@@ -5,4 +5,4 @@
 # We use this instead of purely "." so that we can return the filename/line numbers in the output
 directory=`pwd`
 
-grep -rnH --include=*.py "TODO" $directory | awk -F " " '{ n = split($1,RES,"/"); OUT=RES[7]"/"RES[8]"/"RES[9]; for( i=2; i<=NF; i++) { OUT=OUT" "$i } print OUT;}'
+grep -rnH --include=*.py "TODO" $directory | awk -F " " '{ n = split($1,RES,"/"); OUT=RES[n-2]"/"RES[n-1]"/"RES[n]; for( i=2; i<=NF; i++) { OUT=OUT" "$i } print OUT;}'
