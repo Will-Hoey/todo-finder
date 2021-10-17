@@ -5,7 +5,7 @@
 
 - [ ] Integrate with Github actions (Run script as an action and comment on the PR with a list of the TODOs)
 - [ ] Allow for custom file types to be specified. "\*.js" for example
-
+- [ ] Review the `RES[n-1` statements as if the file is deeply nested, not enough information will be present.
 
 # Backlog (Ideas that may not be possible)
 
